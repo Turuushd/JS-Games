@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 740px;
+  background-color: aqua;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.tile {
+  flex-shrink: 0;
+  border: 2px solid aqua;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.tile.red {
+  background-color: #f00;
+}
+
+.tile.yellow {
+  background-color: #ff0;
+}
+
+.tile:hover {
+  transform: scale(1.01);
+}
