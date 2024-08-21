@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: 0.2s all;
+  width: 100px;
+  height: 100px;
+}
+
+.tile.body {
+  background-color: green;
+}
+
+.tile.head {
+  background-color: red;
+}
+
+.tile.food {
+  background-color: yellow;
+}
